@@ -1,4 +1,4 @@
-package Land;
+package Water;
 
 import Transportation.PublicTransportation;
 
