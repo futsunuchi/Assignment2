@@ -1,8 +1,10 @@
 package Land;
 
 import Transportation.*;
-
-public class CityBus extends PublicTransportation{
+/**
+ * @author <p>Juan Sebastian Hoyos <br/>id:40087920</p>
+ * @author <p>Tigran Karapetyan <br/>id: </p>
+ */public class CityBus extends PublicTransportation{
 	
 	protected long route_number;
 	protected int op_year_debut;

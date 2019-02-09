@@ -1,5 +1,8 @@
 package Land;
-
+/**
+ * @author <p>Juan Sebastian Hoyos <br/>id:40087920</p>
+ * @author <p>Tigran Karapetyan <br/>id: </p>
+ */
 public class Metro extends CityBus{
 	private int num_vehicles;
 	private String name_city;
