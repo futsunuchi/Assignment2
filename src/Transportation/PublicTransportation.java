@@ -23,6 +23,11 @@ public class PublicTransportation {
 		public String toString() {
 			return "PublicTransportation [ticketPrice=" + ticket_price + ", nbOfStops=" + num_stops + "]";
 		}
+		public PublicTransportation()
+		{
+			ticket_price=0;
+			num_stops=0;
+		}
 		public PublicTransportation(double ticketPrice, int nbOfStops) {
 			this.ticket_price = ticketPrice;
 			this.num_stops = nbOfStops;
