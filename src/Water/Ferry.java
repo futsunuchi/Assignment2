@@ -4,7 +4,11 @@ import Transportation.PublicTransportation;
 
 import java.util.Objects;
 
-
+/**
+ * <p>Ferry extends PublicTransportation</p>
+ * @author <p>Juan Sebastian Hoyos <br/>id:40087920</p>
+ * @author <p>Tigran Karapetyan <br/>id: </p>
+ */
 public class Ferry extends PublicTransportation{
 	private int build_year;
 	private String ship_name;
@@ -30,7 +34,12 @@ public class Ferry extends PublicTransportation{
 		this.build_year = build_year;
 		this.ship_name = ship_name;
 	}
-	//----------------------------need to add the copy constructor---------------------------------------------------
+	public Ferry(Ferry ferry)
+	{
+		super(ferry);
+		ship_name=ferry.getShip_name();
+		build_year=ferry.getBuild_year();
+	}
 
 	//setters and getters
 	/**
@@ -68,9 +77,7 @@ public class Ferry extends PublicTransportation{
 	//To String and equals method
 	@Override
 	public String toString() {
-		return "Ferry [build_year=" + build_year + ", ship_name=" + ship_name + ", getBuild_year()=" + getBuild_year()
-				+ ", getShip_name()=" + getShip_name() + ", getTicketPrice()=" + getPrice() + ", getNbOfStops()="
-				+ getNum_Stops() + "]";
+		return super.toString() + "\nThis ship was given the name of " + getShip_name() + ", and it was built in " + getBuild_year();
 	}
 
 	@Override
