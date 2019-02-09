@@ -4,51 +4,69 @@ import Transportation.*;
 
 public class CityBus extends PublicTransportation{
 	
-	private long routNb;
-	private int beginOpYear;
-	private String lineName;
-	private String driverName;
+	protected long route_number;
+	protected int op_year_debut;
+	protected String line_name;
+	protected String driver_name;
 	
-	public long getRoutNb() {
-		return routNb;
+	//Constructors
+	
+	//Parameterized constructor
+	public CityBus(double ticketPrice, int num_stops, long routNb, int beginOpYear, String lineName, String driverName) {
+		super(ticketPrice, num_stops);
+		this.route_number = routNb;
+		this.op_year_debut = beginOpYear;
+		this.line_name = lineName;
+		this.driver_name = driverName;
 	}
-	public void setRoutNb(long routNb) {
-		this.routNb = routNb;
+	//default constructor
+	public CityBus() {
+		super();
 	}
-	public int getBeginOpYear() {
-		return beginOpYear;
+	//copy constructor
+	public CityBus(CityBus bus) {
+		setPrice(bus.getPrice());
+		setNum_Stops(bus.getNum_Stops());
+		this.route_number = bus.getRoute_Num();
+		this.op_year_debut = bus.getOp_Year_Debut();
+		this.line_name = bus.getLineName();
+		this.driver_name = bus.getDriverName();
 	}
-	public void setBeginOpYear(int beginOpYear) {
-		this.beginOpYear = beginOpYear;
+	
+	//setters getters
+	public long getRoute_Num() {
+		return route_number;
+	}
+	public void setRoute_Num(long routNb) {
+		this.route_number = routNb;
+	}
+	public int getOp_Year_Debut() {
+		return op_year_debut;
+	}
+	public void setOp_Year_Debut(int beginOpYear) {
+		this.op_year_debut = beginOpYear;
 	}
 	public String getLineName() {
-		return lineName;
+		return line_name;
 	}
 	public void setLineName(String lineName) {
-		this.lineName = lineName;
+		this.line_name = lineName;
 	}
 	public String getDriverName() {
-		return driverName;
+		return driver_name;
 	}
 	public void setDriverName(String driverName) {
-		this.driverName = driverName;
+		this.driver_name = driverName;
 	}
 
-	public CityBus(double ticketPrice, int nbOfStops, long routNb, int beginOpYear, String lineName,
-			String driverName) {
-		super(ticketPrice, nbOfStops);
-		this.routNb = routNb;
-		this.beginOpYear = beginOpYear;
-		this.lineName = lineName;
-		this.driverName = driverName;
-	}
+	
+	//toString
 	@Override
 	public String toString() {
-		return "CityBus [routNb=" + routNb + ", beginOpYear=" + beginOpYear + ", lineName=" + lineName + ", driverName="
-				+ driverName + ", getRoutNb()=" + getRoutNb() + ", getBeginOpYear()=" + getBeginOpYear()
-				+ ", getLineName()=" + getLineName() + ", getDriverName()=" + getDriverName() + ", getTicketPrice()="
-				+ getTicketPrice() + ", getNbOfStops()=" + getNbOfStops()+ "]";
+		return "CityBus [route number=" + route_number + ", operation year debut =" + op_year_debut + ", line name=" + line_name + ", driver Name="
+				+ driver_name +  ", ticket price =" + getPrice() + ", number of stops=" + getNum_Stops()+ "]";
 	}
+	//equals method
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -58,19 +76,19 @@ public class CityBus extends PublicTransportation{
 		if (getClass() != obj.getClass())
 			return false;
 		CityBus other = (CityBus) obj;
-		if (beginOpYear != other.beginOpYear)
+		if (op_year_debut != other.op_year_debut)
 			return false;
-		if (driverName == null) {
-			if (other.driverName != null)
+		if (driver_name == null) {
+			if (other.driver_name != null)
 				return false;
-		} else if (!driverName.equals(other.driverName))
+		} else if (!driver_name.equals(other.driver_name))
 			return false;
-		if (lineName == null) {
-			if (other.lineName != null)
+		if (line_name == null) {
+			if (other.line_name != null)
 				return false;
-		} else if (!lineName.equals(other.lineName))
+		} else if (!line_name.equals(other.line_name))
 			return false;
-		if (routNb != other.routNb)
+		if (route_number != other.route_number)
 			return false;
 		return true;
 	}

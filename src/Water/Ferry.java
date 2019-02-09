@@ -26,8 +26,8 @@ public class Ferry extends PublicTransportation{
 	@Override
 	public String toString() {
 		return "Ferry [build_year=" + build_year + ", ship_name=" + ship_name + ", getBuild_year()=" + getBuild_year()
-				+ ", getShip_name()=" + getShip_name() + ", getTicketPrice()=" + getTicketPrice() + ", getNbOfStops()="
-				+ getNbOfStops() + "]";
+				+ ", getShip_name()=" + getShip_name() + ", getTicketPrice()=" + getPrice() + ", getNbOfStops()="
+				+ getNum_Stops() + "]";
 	}
 	
 	@Override

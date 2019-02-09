@@ -1,35 +1,62 @@
 package Land;
 
 public class Metro extends CityBus{
-	private int nbOfVehicles;
-	private String nameOfCity;
-	public int getNbOfVehicles() {
-		return nbOfVehicles;
-	}
-	public void setNbOfVehicles(int nbOfVehicles) {
-		this.nbOfVehicles = nbOfVehicles;
-	}
-	public String getNameOfCity() {
-		return nameOfCity;
-	}
-	public void setNameOfCity(String nameOfCity) {
-		this.nameOfCity = nameOfCity;
-	}
+	private int num_vehicles;
+	private String name_city;
+	
+	//Constructors
+	
+	//parameterized constructor
 	public Metro(double ticketPrice, int nbOfStops, long routNb, int beginOpYear, String lineName, String driverName,
 			int nbOfVehicles, String nameOfCity) {
 		super(ticketPrice, nbOfStops, routNb, beginOpYear, lineName, driverName);
-		this.nbOfVehicles = nbOfVehicles;
-		this.nameOfCity = nameOfCity;
+		this.num_vehicles = nbOfVehicles;
+		this.name_city = nameOfCity;
 	}
+	
+	//default constructor
+	public Metro() {
+		super();
+	}
+	
+	//copy constructor
+	public Metro(Metro metro)
+	{
+		this.driver_name=metro.getDriverName();
+		this.line_name=metro.getLineName();
+		this.name_city=metro.getNameOfCity();
+		this.num_vehicles=metro.getNbOfVehicles();
+		this.op_year_debut=metro.getOp_Year_Debut();
+		this.route_number=metro.getRoute_Num();
+		this.setPrice(metro.getPrice());
+		this.setNum_Stops(metro.getNum_Stops());
+	}
+	
+	//setter getters
+	public int getNbOfVehicles() {
+		return num_vehicles;
+	}
+	public void setNbOfVehicles(int nbOfVehicles) {
+		this.num_vehicles = nbOfVehicles;
+	}
+	public String getNameOfCity() {
+		return name_city;
+	}
+	public void setNameOfCity(String nameOfCity) {
+		this.name_city = nameOfCity;
+	}
+	
+	//toString method
 	@Override
 	public String toString() {
-		return "Metro [nbOfVehicles=" + nbOfVehicles + ", nameOfCity=" + nameOfCity + ", getNbOfVehicles()="
-				+ getNbOfVehicles() + ", getNameOfCity()=" + getNameOfCity() + ", getRoutNb()=" + getRoutNb()
-				+ ", getBeginOpYear()=" + getBeginOpYear() + ", getLineName()=" + getLineName() + ", getDriverName()="
-				+ getDriverName() + ", toString()=" + super.toString() + ", getTicketPrice()=" + getTicketPrice()
-				+ ", getNbOfStops()=" + getNbOfStops() 
+		return "Metro [number of vehicles =" + num_vehicles + ", name of the city=" + name_city + ", route number()=" + getRoute_Num()
+				+ ", operation year debut =" + getOp_Year_Debut() + ", line name =" + getLineName() + ", driver name ="
+				+ getDriverName() + ", ticket price =" + getPrice()
+				+ ", number of stops =" + getNum_Stops() 
 				+ "]";
 	}
+	
+	//equals method
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -39,12 +66,12 @@ public class Metro extends CityBus{
 		if (getClass() != obj.getClass())
 			return false;
 		Metro other = (Metro) obj;
-		if (nameOfCity == null) {
-			if (other.nameOfCity != null)
+		if (name_city == null) {
+			if (other.name_city != null)
 				return false;
-		} else if (!nameOfCity.equals(other.nameOfCity))
+		} else if (!name_city.equals(other.name_city))
 			return false;
-		if (nbOfVehicles != other.nbOfVehicles)
+		if (num_vehicles != other.num_vehicles)
 			return false;
 		return true;
 	}
