@@ -4,29 +4,29 @@ import Transportation.PublicTransportation;
 
 
 public class Ferry extends PublicTransportation{
-	private int buildYear;
-	private String shipName;
-	public Ferry(double ticketPrice, int nbOfStops, int buildYear, String shipName) {
+	private int build_year;
+	private String ship_name;
+	public Ferry(double ticketPrice, int nbOfStops, int build_year, String ship_name) {
 		super(ticketPrice, nbOfStops);
-		this.buildYear = buildYear;
-		this.shipName = shipName;
+		this.build_year = build_year;
+		this.ship_name = ship_name;
 	}
-	public int getBuildYear() {
-		return buildYear;
+	public int getBuild_year() {
+		return build_year;
 	}
-	public void setBuildYear(int buildYear) {
-		this.buildYear = buildYear;
+	public void setBuild_year(int build_year) {
+		this.build_year = build_year;
 	}
-	public String getShipName() {
-		return shipName;
+	public String getShip_name() {
+		return ship_name;
 	}
-	public void setShipName(String shipName) {
-		this.shipName = shipName;
+	public void setShip_name(String ship_name) {
+		this.ship_name = ship_name;
 	}
 	@Override
 	public String toString() {
-		return "Ferry [buildYear=" + buildYear + ", shipName=" + shipName + ", getBuildYear()=" + getBuildYear()
-				+ ", getShipName()=" + getShipName() + ", getTicketPrice()=" + getTicketPrice() + ", getNbOfStops()="
+		return "Ferry [build_year=" + build_year + ", ship_name=" + ship_name + ", getBuild_year()=" + getBuild_year()
+				+ ", getShip_name()=" + getShip_name() + ", getTicketPrice()=" + getTicketPrice() + ", getNbOfStops()="
 				+ getNbOfStops() + "]";
 	}
 	
@@ -39,12 +39,12 @@ public class Ferry extends PublicTransportation{
 		if (getClass() != obj.getClass())
 			return false;
 		Ferry other = (Ferry) obj;
-		if (buildYear != other.buildYear)
+		if (build_year != other.build_year)
 			return false;
-		if (shipName == null) {
-			if (other.shipName != null)
+		if (ship_name == null) {
+			if (other.ship_name != null)
 				return false;
-		} else if (!shipName.equals(other.shipName))
+		} else if (!ship_name.equals(other.ship_name))
 			return false;
 		return true;
 	}
