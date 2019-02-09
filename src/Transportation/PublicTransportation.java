@@ -1,7 +1,10 @@
 package Transportation;
 
 
-
+/**
+ * @author <p>Juan Sebastian Hoyos <br/>id:40087920</p>
+ * @author <p>Tigran Karapetyan <br/>id: </p>
+ */
 public class PublicTransportation {
 	
 	private double ticket_price;
@@ -42,7 +45,7 @@ public class PublicTransportation {
 	//toString method
 	@Override
 	public String toString() {
-			return "PublicTransportation [ticket Price=" + ticket_price + ", number of Stops=" + num_stops + "]";
+			return "This" + this.getClass() + "has " + num_stops + ", and it cost " + ticket_price;
 	}
 	
 	//equals method
