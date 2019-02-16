@@ -25,6 +25,7 @@ public class Driver
         Metro m=new Metro(10.50,10,35097,1998,"Lucien-L\'allier","George",15,"Montreal");
         Tram t=new Tram(10.50,10,4500,2005,"Dorval","Justin",60);
         CityBus c=new CityBus(4.25,6,4398,2000,"Cote-vertu","Freddy");
+        PublicTransportation cheapest,expensive;
 
         //Using the toString method from each object to verify the functionality of the toString method and the constructors
         System.out.println("List of ferry, metro, tram,city buss in order:\n " + pt.toString() + "\n\t" +
@@ -111,6 +112,19 @@ public class Driver
                     break;
             }
             System.out.println("This object is " + city_transport[i].getClass().toString().substring(6));
+
+            //Looking for the cheapest and most expensive transport
+            if (city_transport[i].getPrice()>city_transport[i+1].getPrice())
+            {
+                cheapest=city_transport[i+1];
+                expensive=city_transport[i];
+            }
+            else
+            {
+                expensive=city_transport[i+1];
+                cheapest=city_transport[i];
+            }
+            System.out.println("cheapest is " +cheapest.toString()+ " most expensive is " + expensive.toString());
         }
 
     }
