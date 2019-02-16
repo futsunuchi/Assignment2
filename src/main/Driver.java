@@ -38,8 +38,10 @@ public class Driver
         //Creating an array of 15 public transportation from the 6 different subclasses
         PublicTransportation[] city_transport=new PublicTransportation[15];
 
+        System.out.println("We will begin created 15 different objects with parametrized constructors");
         for (int i=0;i<15;i++)
         {
+            System.out.println("Creating object " + (i+1));
             double price;
             int num_stops,op_debut,num_vehicles,speed,built_year;
             long route_number;
@@ -107,8 +109,8 @@ public class Driver
                 case 5:
                     city_transport[i]=new Aircraft();
                     break;
-
             }
+            System.out.println("This object is " + city_transport[i].getClass().toString().substring(6));
         }
 
     }
