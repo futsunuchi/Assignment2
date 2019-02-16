@@ -53,7 +53,7 @@ public class Aircraft extends PublicTransportation
     }
 
     private Type aircraft_type;
-    private MaintenanceType maintenance;
+    public MaintenanceType maintenance;
 
     //constructors
 

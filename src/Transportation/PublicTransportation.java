@@ -45,7 +45,7 @@ public class PublicTransportation {
 	//toString method
 	@Override
 	public String toString() {
-			return "This" + this.getClass() + "has " + num_stops + ", and it cost " + ticket_price;
+			return "This " + this.getClass().toString().substring(6) + " has " + num_stops + " stops, and it cost " + ticket_price + "$";
 	}
 	
 	//equals method

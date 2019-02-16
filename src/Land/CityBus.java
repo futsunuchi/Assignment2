@@ -65,8 +65,8 @@ import Transportation.*;
 	//toString
 	@Override
 	public String toString() {
-		return "CityBus [route number=" + route_number + ", operation year debut =" + op_year_debut + ", line name=" + line_name + ", driver Name="
-				+ driver_name +  ", ticket price =" + getPrice() + ", number of stops=" + getNum_Stops()+ "]";
+		return super.toString() + "\nThe route number is " + this.route_number + ", it started operating in " + op_year_debut + ". On the line " + line_name + ", and the driver is "
+				+ driver_name;
 	}
 	//equals method
 	@Override

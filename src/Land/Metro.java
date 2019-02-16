@@ -25,14 +25,15 @@ public class Metro extends CityBus{
 	//copy constructor
 	public Metro(Metro metro)
 	{
-		this.driver_name=metro.getDriverName();
-		this.line_name=metro.getLineName();
-		this.name_city=metro.getNameOfCity();
-		this.num_vehicles=metro.getNbOfVehicles();
-		this.op_year_debut=metro.getOp_Year_Debut();
-		this.route_number=metro.getRoute_Num();
-		this.setPrice(metro.getPrice());
-		this.setNum_Stops(metro.getNum_Stops());
+		super(metro.getPrice(),metro.getNum_Stops(),metro.route_number,metro.op_year_debut,metro.line_name,metro.driver_name);
+		//this.driver_name=metro.driver_name;
+		//this.line_name=metro.line_name;
+		this.name_city=metro.name_city;
+		this.num_vehicles=metro.num_vehicles;
+		//this.op_year_debut=metro.op_year_debut;
+		//this.route_number=metro.route_number;
+		//this.setPrice(metro.getPrice());
+		//this.setNum_Stops(metro.getNum_Stops());
 	}
 	
 	//setter getters
@@ -52,11 +53,7 @@ public class Metro extends CityBus{
 	//toString method
 	@Override
 	public String toString() {
-		return "Metro [number of vehicles =" + num_vehicles + ", name of the city=" + name_city + ", route number()=" + getRoute_Num()
-				+ ", operation year debut =" + getOp_Year_Debut() + ", line name =" + getLineName() + ", driver name ="
-				+ getDriverName() + ", ticket price =" + getPrice()
-				+ ", number of stops =" + getNum_Stops() 
-				+ "]";
+		return super.toString() + "\nThis metro has " + num_vehicles + " vehicles, and is in " + name_city;
 	}
 	
 	//equals method
