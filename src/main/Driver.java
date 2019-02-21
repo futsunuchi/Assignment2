@@ -1,7 +1,5 @@
 package main;
-/**
- * <p>Imported four packages into the Driver class</p>
- */
+
 import Transportation.*;
 import Land.*;
 import Air.*;
@@ -26,6 +24,7 @@ public class Driver
         Tram t=new Tram(10.50,10,4500,2005,"Dorval","Justin",60);
         CityBus c=new CityBus(4.25,6,4398,2000,"Cote-vertu","Freddy");
         PublicTransportation cheapest,expensive;
+        int cheapest_index,expensive_index;
 
         //Using the toString method from each object to verify the functionality of the toString method and the constructors
         System.out.println("List of ferry, metro, tram,city buss in order:\n " + pt.toString() + "\n\t" +
@@ -58,7 +57,7 @@ public class Driver
                     city_transport[i]=new PublicTransportation(price,num_stops);
                     break;
                 case 1:
-                    System.out.print("Please enter the route number: ");
+                   /* System.out.print("Please enter the route number: ");
                     route_number=input.nextLong();
                     System.out.print("Please enter the year of debut of operations: ");
                     op_debut=input.nextInt();
@@ -70,8 +69,8 @@ public class Driver
                     System.out.print("Please enter the name of the city: ");
                     city=input.nextLine();
                     System.out.print("Please enter the num of vehicles: ");
-                    num_vehicles=input.nextInt();
-                    city_transport[i]=new Metro(price,num_stops,route_number,op_debut,line_name,driver,num_vehicles,city);
+                    num_vehicles=input.nextInt(); */
+                    city_transport[i]=new Metro();//price,num_stops,route_number,op_debut,line_name,driver,num_vehicles,city);
                     break;
                 case 2:
                     System.out.print("Please enter the route number: ");
@@ -86,7 +85,7 @@ public class Driver
                     city_transport[i]=new CityBus(price,num_stops,route_number,op_debut,line_name,driver);
                     break;
                 case 3:
-                    System.out.print("Please enter the route number: ");
+                   /* System.out.print("Please enter the route number: ");
                     route_number=input.nextLong();
                     System.out.print("Please enter the year of debut of operations: ");
                     op_debut=input.nextInt();
@@ -96,8 +95,8 @@ public class Driver
                     System.out.print("Please enter the name of the driver: ");
                     driver=input.nextLine();
                     System.out.print("Please enter the max speed: ");
-                    speed = input.nextInt();
-                    city_transport[i]=new Tram(price,num_stops,route_number,op_debut,line_name,driver,speed);
+                    speed = input.nextInt(); */
+                    city_transport[i]=new Tram();//price,num_stops,route_number,op_debut,line_name,driver,speed);
                     break;
                 case 4:
                     System.out.print("Please enter the year the ship was built: ");
@@ -113,19 +112,33 @@ public class Driver
             }
             System.out.println("This object is " + city_transport[i].getClass().toString().substring(6));
 
+        }
+        
+        // !!!!!!!!!!!This is only working if all values are different but if many objects have the same price---------------------------------
+        //!!!!!!!!!!!!!it doesn't know which one is the cheapest/expensive so it just takes the last one-----------------------------------------
+
+        for (int i=0;i<14;i++)
+        {
             //Looking for the cheapest and most expensive transport
             if (city_transport[i].getPrice()>city_transport[i+1].getPrice())
             {
                 cheapest=city_transport[i+1];
                 expensive=city_transport[i];
+                cheapest_index=(i+1);
+                expensive_index=i;
             }
             else
             {
                 expensive=city_transport[i+1];
                 cheapest=city_transport[i];
+                cheapest_index=i;
+                expensive_index=(i+1);
             }
-            System.out.println("cheapest is " +cheapest.toString()+ " most expensive is " + expensive.toString());
+            if (i==13)
+            {
+                System.out.println("cheapest is " + cheapest.toString() + "its index is: " + cheapest_index + "\nThe most expensive is " + expensive.toString()
+                + " and its index is: " + expensive_index);
+            }
         }
-
     }
 }
