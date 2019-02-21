@@ -20,7 +20,7 @@ public class PublicTransportation {
 	public PublicTransportation()
 	{
 		ticket_price=3.25;
-		num_stops=0;
+		num_stops=17;
 	}
 	//Parametrized constructor
 	public PublicTransportation(double ticketPrice, int nbOfStops) {

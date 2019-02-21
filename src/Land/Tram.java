@@ -17,8 +17,10 @@ public class Tram extends CityBus {
 	}
 	
 	//default constructor
-	public Tram() {
+	public Tram()
+	{
 		super();
+		max_speed=100;
 	}
 	
 	//copy constructor

@@ -18,8 +18,8 @@ public class Ferry extends PublicTransportation{
 	public Ferry()
 	{
 		super();
-		build_year=0;
-		ship_name=null;
+		build_year=1998;
+		ship_name="Aquaman";
 	}
 
 	/**

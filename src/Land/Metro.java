@@ -18,8 +18,11 @@ public class Metro extends CityBus{
 	}
 	
 	//default constructor
-	public Metro() {
+	public Metro()
+	{
 		super();
+		num_vehicles=15;
+		name_city="Montreal";
 	}
 	
 	//copy constructor

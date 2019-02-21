@@ -22,8 +22,13 @@ import Transportation.*;
 		this.driver_name = driverName;
 	}
 	//default constructor
-	public CityBus() {
+	public CityBus()
+	{
 		super();
+		route_number=3000;
+		op_year_debut=2007;
+		line_name="Terminus";
+		driver_name="Michael";
 	}
 	//copy constructor
 	public CityBus(CityBus bus) {

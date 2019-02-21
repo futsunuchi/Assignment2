@@ -47,16 +47,20 @@ public class Driver
             long route_number;
             String line_name,temp,driver,city,ship_name;
 
-            System.out.print("Please enter the price: ");
-            price=input.nextDouble();
-            System.out.print("Please enter the number of stops: ");
-            num_stops=input.nextInt();
+           //System.out.print("Please enter the price: ");
+            //price=input.nextDouble();
+            //System.out.print("Please enter the number of stops: ");
+            //num_stops=input.nextInt();
             switch (i%6)
             {
                 case 0:
+                    System.out.print("Please enter the price: "); //the following three lines would usually go before the switch but its after for testing purposes
+                    price=input.nextDouble();
+                    System.out.print("Please enter the number of stops: ");
+                    num_stops=input.nextInt();                      //from line 57-60 should go before the switch case
                     city_transport[i]=new PublicTransportation(price,num_stops);
                     break;
-                case 1:
+                case 1: // I would usually let the user input the values but this makes testing way too long
                    /* System.out.print("Please enter the route number: ");
                     route_number=input.nextLong();
                     System.out.print("Please enter the year of debut of operations: ");
@@ -72,8 +76,8 @@ public class Driver
                     num_vehicles=input.nextInt(); */
                     city_transport[i]=new Metro();//price,num_stops,route_number,op_debut,line_name,driver,num_vehicles,city);
                     break;
-                case 2:
-                    System.out.print("Please enter the route number: ");
+                case 2: // I would usually let the user input the values but this makes testing way too long
+                   /* System.out.print("Please enter the route number: ");
                     route_number=input.nextLong();
                     System.out.print("Please enter the year of debut of operations: ");
                     op_debut=input.nextInt();
@@ -81,10 +85,10 @@ public class Driver
                     temp=input.nextLine();
                     line_name=input.nextLine();
                     System.out.print("Please enter the name of the driver: ");
-                    driver=input.nextLine();
-                    city_transport[i]=new CityBus(price,num_stops,route_number,op_debut,line_name,driver);
+                    driver=input.nextLine(); */
+                    city_transport[i]=new CityBus();//price,num_stops,route_number,op_debut,line_name,driver);
                     break;
-                case 3:
+                case 3: // I would usually let the user input the values but this makes testing way too long
                    /* System.out.print("Please enter the route number: ");
                     route_number=input.nextLong();
                     System.out.print("Please enter the year of debut of operations: ");
@@ -99,6 +103,10 @@ public class Driver
                     city_transport[i]=new Tram();//price,num_stops,route_number,op_debut,line_name,driver,speed);
                     break;
                 case 4:
+                    System.out.print("Please enter the price: "); //the following three lines would usually go before the switch but its after for testing purposes
+                    price=input.nextDouble();
+                    System.out.print("Please enter the number of stops: ");
+                    num_stops=input.nextInt();                      // from line 106-109 should go before the switch case
                     System.out.print("Please enter the year the ship was built: ");
                     built_year=input.nextInt();
                     System.out.print("Please enter the ship name: ");
@@ -113,7 +121,7 @@ public class Driver
             System.out.println("This object is " + city_transport[i].getClass().toString().substring(6));
 
         }
-        
+
         // !!!!!!!!!!!This is only working if all values are different but if many objects have the same price---------------------------------
         //!!!!!!!!!!!!!it doesn't know which one is the cheapest/expensive so it just takes the last one-----------------------------------------
 
