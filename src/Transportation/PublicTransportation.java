@@ -19,7 +19,7 @@ public class PublicTransportation {
 	//Default constructor
 	public PublicTransportation()
 	{
-		ticket_price=0;
+		ticket_price=3.25;
 		num_stops=0;
 	}
 	//Parametrized constructor
