@@ -130,7 +130,7 @@ public class Driver
             //Looking for the cheapest and most expensive transport
             if (city_transport[i].getPrice()>city_transport[i+1].getPrice())
             {
-                cheapest=city_transport[i+1];
+                cheapest=city_transport[i+1]; // The same address not a copy of the object
                 expensive=city_transport[i];
                 cheapest_index=(i+1);
                 expensive_index=i;
