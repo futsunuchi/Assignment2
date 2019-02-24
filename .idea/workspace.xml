@@ -2,21 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0cf6cda-994b-400e-84bc-f2f5d1b79555" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/Driver1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Part1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Part1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part1/src/Air/Aircraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/Part1/src/Air/Aircraft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part1/src/Land/CityBus.java" beforeDir="false" afterPath="$PROJECT_DIR$/Part1/src/Land/CityBus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part1/src/Land/Metro.java" beforeDir="false" afterPath="$PROJECT_DIR$/Part1/src/Land/Metro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part1/src/Land/Tram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Part1/src/Land/Tram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part1/src/Transportation/PublicTransportation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Part1/src/Transportation/PublicTransportation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part1/src/Water/Ferry.java" beforeDir="false" afterPath="$PROJECT_DIR$/Part1/src/Water/Ferry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Air/Aircraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Air/Aircraft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Land/CityBus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Land/CityBus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Land/Metro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Land/Metro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Land/Tram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Land/Tram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transportation/PublicTransportation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transportation/PublicTransportation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Water/Ferry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Water/Ferry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part1/src/main/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Part1/src/main/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/assignment_2/Land/CityBus.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assignment_2/Land/CityBus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/assignment_2/Land/Metro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assignment_2/Land/Metro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/assignment_2/Land/Tram.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assignment_2/Land/Tram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/assignment_2/Transportation/PublicTransportation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assignment_2/Transportation/PublicTransportation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/assignment_2/Water/Ferry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assignment_2/Water/Ferry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/assignment_2/main/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Driver.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -91,10 +87,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/Driver.java">
+        <entry file="file://$PROJECT_DIR$/src/main/Driver1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="138" column="16" lean-forward="true" selection-start-line="138" selection-start-column="16" selection-end-line="138" selection-end-column="16" />
+            <state relative-caret-position="427">
+              <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#CopyCityBus#0;class#Driver#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,6 +144,7 @@
         <option value="$PROJECT_DIR$/src/Transportation/PublicTransportation.java" />
         <option value="$PROJECT_DIR$/src/Water/Ferry.java" />
         <option value="$PROJECT_DIR$/src/main/Driver.java" />
+        <option value="$PROJECT_DIR$/src/main/Driver1.java" />
       </list>
     </option>
   </component>
@@ -169,7 +170,36 @@
             <path>
               <item name="assignment_2" type="b2602c69:ProjectViewProjectNode" />
               <item name="assignment_2" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment_2" type="462c0819:PsiDirectoryNode" />
+              <item name="Part1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment_2" type="462c0819:PsiDirectoryNode" />
+              <item name="Part1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment_2" type="462c0819:PsiDirectoryNode" />
+              <item name="Part1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment_2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment_2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -181,7 +211,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550974761696" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550978090328" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -198,8 +228,8 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.Driver" />
+    <configuration name="Driver1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Driver1" />
       <module name="assignment_2" />
       <extension name="coverage">
         <pattern>
@@ -213,7 +243,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Driver" />
+        <item itemvalue="Application.Driver1" />
       </list>
     </recent_temporary>
   </component>
@@ -235,32 +265,43 @@
       <workItem from="1550762590651" duration="4117000" />
       <workItem from="1550777595032" duration="5000" />
       <workItem from="1550970000667" duration="674000" />
-      <workItem from="1550970770367" duration="3700000" />
+      <workItem from="1550970770367" duration="6974000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34132000" />
+    <option name="totallyTimeSpent" value="37406000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26172465" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24962178" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Duplicate detector" weight="0.89198035" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.9459459" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.9443535" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32972974" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -346,13 +387,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Land/Tram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Land/Metro.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -361,6 +395,13 @@
             <element signature="method#toString#0;class#Metro#0" />
             <element signature="method#equals#0;class#Metro#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Air/Aircraft.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-646">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -394,17 +435,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Air/Aircraft.java">
+    <entry file="file://$PROJECT_DIR$/src/Land/Tram.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-646">
-          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+        <state relative-caret-position="51">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Driver.java">
+    <entry file="file://$PROJECT_DIR$/Part1/src/main/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="138" column="16" lean-forward="true" selection-start-line="138" selection-start-column="16" selection-end-line="138" selection-end-column="16" />
+        <state relative-caret-position="884">
+          <caret line="59" column="23" lean-forward="true" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Driver1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#CopyCityBus#0;class#Driver#0" />
+          </folding>
         </state>
       </provider>
     </entry>

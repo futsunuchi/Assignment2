@@ -152,5 +152,6 @@ public class Driver
                 + " and its index is: " + expensive_index);
             }
         }
+        input.close();
     }
 }
