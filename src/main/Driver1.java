@@ -16,6 +16,13 @@ public class Driver1
      * @param cityBus PublicTransportation
      * @return PublicTransportation copy
      */
+    /*
+   Using this method to copy the array will produce an incorrect result as this method won't return an exact copy of the
+   objects on the initial array.
+   In fact, all the objects in the array will be cast into PublicTransportation and will not longer belong the their original
+   class. Which explains why when printing the results of the copy array it prints all objects as belonging to
+   the class PublicTransportation
+     */
     public static PublicTransportation[] CopyCityBus(PublicTransportation[] cityBus)
     {
         PublicTransportation[] copy=new PublicTransportation[cityBus.length];
@@ -32,7 +39,7 @@ public class Driver1
         for (int i=0;i<12;i++)
         {
             System.out.println("Creating object " + (i+1));
-       
+
             switch (i%6)
             {
                 case 0:

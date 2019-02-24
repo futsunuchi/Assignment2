@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3da41d6c-e8b3-4df6-9134-fc8c215f742e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../src/main/Driver1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/assignment_2/Land/CityBus.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/assignment_2/Land/CityBus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/assignment_2/Land/Metro.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/assignment_2/Land/Metro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/assignment_2/Land/Tram.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/assignment_2/Land/Tram.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/assignment_2/Transportation/PublicTransportation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/assignment_2/Transportation/PublicTransportation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/assignment_2/Water/Ferry.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/assignment_2/Water/Ferry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/assignment_2/main/Driver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/Driver1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/Driver1.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -150,7 +141,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550978090515" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550978498294" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -187,12 +178,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550971897452</updated>
-      <workItem from="1550971903848" duration="4842000" />
+      <workItem from="1550971903848" duration="5129000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4842000" />
+    <option name="totallyTimeSpent" value="5129000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
