@@ -1,9 +1,12 @@
 package main;
 
-import Transportation.*;
-import Land.*;
-import Air.*;
-import Water.*;
+import Air.Aircraft;
+import Land.CityBus;
+import Land.Metro;
+import Land.Tram;
+import Transportation.PublicTransportation;
+import Water.Ferry;
+
 import java.util.Scanner;
 
 /**

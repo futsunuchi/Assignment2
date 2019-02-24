@@ -1,11 +1,11 @@
 package Land;
 /**
  * @author <p>Juan Sebastian Hoyos <br/>id:40087920</p>
- * @author <p>Tigran Karapetyan <br/>id: </p>
+ * @author <p>Tigran Karapetyan <br/>id:40096558 </p>
  */
 public class Tram extends CityBus {
 	
-	private int max_speed;
+	protected int max_speed;
 	
 	//constructor
 	

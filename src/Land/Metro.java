@@ -1,7 +1,7 @@
 package Land;
 /**
  * @author <p>Juan Sebastian Hoyos <br/>id:40087920</p>
- * @author <p>Tigran Karapetyan <br/>id: </p>
+ * @author <p>Tigran Karapetyan <br/>id:40096558 </p>
  */
 public class Metro extends CityBus{
 	private int num_vehicles;
@@ -28,7 +28,7 @@ public class Metro extends CityBus{
 	//copy constructor
 	public Metro(Metro metro)
 	{
-		super(metro.getPrice(),metro.getNum_Stops(),metro.route_number,metro.op_year_debut,metro.line_name,metro.driver_name);
+		super(metro.getPrice(),metro.getNum_Stops(),metro.getRoute_Num(),metro.getOp_Year_Debut(),metro.getLineName(),metro.getDriverName());
 		//this.driver_name=metro.driver_name;
 		//this.line_name=metro.line_name;
 		this.name_city=metro.name_city;

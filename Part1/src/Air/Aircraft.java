@@ -5,7 +5,7 @@ import Transportation.PublicTransportation;
 /**
  * <p>Aircraft extends PublicTransportation</p>
  * @author <p>Juan Sebastian Hoyos <br/>id:40087920</p>
- * @author <p>Tigran Karapetyan <br/>id: </p>
+ * @author <p>Tigran Karapetyan <br/>id:40096558 </p>
  */
 public class Aircraft extends PublicTransportation
 {

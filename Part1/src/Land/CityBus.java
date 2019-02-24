@@ -4,7 +4,7 @@ import Transportation.*;
 
 /**
  * @author <p>Juan Sebastian Hoyos <br/>id:40087920</p>
- * @author <p>Tigran Karapetyan <br/>id: </p>
+ * @author <p>Tigran Karapetyan <br/>id:40096558 </p>
  */public class CityBus extends PublicTransportation{
 	
 	protected long route_number;
@@ -15,6 +15,15 @@ import Transportation.*;
 	//Constructors
 	
 	//Parameterized constructor
+	/**
+	 * parametrized constructor to initialized newly created object to specific values
+	 * @param ticketPrice double
+	 * @param num_stops int
+	 * @param routNb long
+	 * @param beginOpYear int
+	 * @param lineName string
+	 * @param driverName string
+	 */
 	public CityBus(double ticketPrice, int num_stops, long routNb, int beginOpYear, String lineName, String driverName) {
 		super(ticketPrice, num_stops);
 		this.route_number = routNb;
@@ -23,6 +32,9 @@ import Transportation.*;
 		this.driver_name = driverName;
 	}
 	//default constructor
+	/**
+	 * Default constructor to initialize newly created object to default values
+	 */
 	public CityBus()
 	{
 		super();
@@ -32,6 +44,10 @@ import Transportation.*;
 		driver_name="Michael";
 	}
 	//copy constructor
+	/**
+	 * Copy constructor to initialize newly created object with exact same values as the ones of a previous created object
+	 * @param bus CityBus
+	 */
 	public CityBus(CityBus bus) {
 		setPrice(bus.getPrice());
 		setNum_Stops(bus.getNum_Stops());
@@ -42,27 +58,62 @@ import Transportation.*;
 	}
 	
 	//setters getters
+	/**
+	 * getter to access the route number
+	 * @return long route_number
+	 */
 	public long getRoute_Num() {
 		return route_number;
 	}
+	/**
+	 * setter to change the value of the route number
+	 * @param routNb long
+	 */
 	public void setRoute_Num(long routNb) {
 		this.route_number = routNb;
 	}
+	/**
+	 * getter to access the year the object started operating
+	 * @return int op_year_debut
+	 */
 	public int getOp_Year_Debut() {
 		return op_year_debut;
 	}
+	/**
+	 * setter to change the value of the year the object started operating
+	 * @param beginOpYear int
+	 */
 	public void setOp_Year_Debut(int beginOpYear) {
 		this.op_year_debut = beginOpYear;
 	}
+	/**
+	 *getter to access the name of the line
+	 * @return String line_name
+	 */
 	public String getLineName() {
 		return line_name;
 	}
+
+	/**
+	 * setter to change the name of the line
+	 * @param lineName String
+	 */
 	public void setLineName(String lineName) {
 		this.line_name = lineName;
 	}
+
+	/**
+	 * getter to access the name of the driver
+	 * @return String driver_name
+	 */
 	public String getDriverName() {
 		return driver_name;
 	}
+
+	/**
+	 * setter to change the name of the driver
+	 * @param driverName String
+	 */
 	public void setDriverName(String driverName) {
 		this.driver_name = driverName;
 	}

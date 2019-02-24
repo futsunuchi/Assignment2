@@ -1,7 +1,7 @@
 package Land;
 /**
  * @author <p>Juan Sebastian Hoyos <br/>id:40087920</p>
- * @author <p>Tigran Karapetyan <br/>id: </p>
+ * @author <p>Tigran Karapetyan <br/>id:40096558 </p>
  */
 public class Tram extends CityBus {
 	
@@ -25,14 +25,9 @@ public class Tram extends CityBus {
 	
 	//copy constructor
 	public Tram(Tram tram) {
-		super(tram.getPrice(),tram.getNum_Stops(),tram.route_number,tram.op_year_debut,tram.line_name,tram.driver_name);
-		//this.driver_name=tram.driver_name;
-		//this.line_name=tram.line_name;
+		super(tram.getPrice(),tram.getNum_Stops(),tram.getRoute_Num(),tram.getOp_Year_Debut(),tram.getLineName(),tram.getDriverName());//Changing the access right of the attributes
+		//of citybus class forces us to use getters as the attributes cannot be directly accessed
 		this.max_speed=tram.getMaxSpeed();
-		//this.op_year_debut=tram.op_year_debut;
-		//this.route_number=tram.route_number;
-		//this.setPrice(tram.getPrice());
-		//this.setNum_Stops(tram.getNum_Stops());
 	}
 	
 	//setters getters
